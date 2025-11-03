@@ -32,7 +32,7 @@ $sup = mysqli_fetch_all($hasil, MYSQLI_ASSOC);
                 echo "<td>".htmlspecialchars($value['nama'])."</td>";
                 echo "<td>".htmlspecialchars($value['telp'])."</td>";
                 echo "<td>".htmlspecialchars($value['alamat'])."</td>";
-                echo "<td><a href='update.php?action=hapus&id={$value['id']}'>Edit</a>  <a href='del.php?action=hapus&id={$value['id']}' onclick='return confirm(\"Anda yakin ingin menghapus supllier ini?\")''>Delete</a></td>";
+                echo "<td><a href='update.php?action=hapus&id={$value['id']}'>Edit</a>  <a href='del.php?action=hapus&id={$value['id']}' onclick='return confirm(\"Anda yakin ingin menghapus supllier ini?\")'>Delete</a></td>";
                 echo "</tr>";
             }
         } else {
